@@ -1,22 +1,22 @@
 {
-  "name": "account-remote-e2e",
+  "name": "weather-app-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/account-remote-e2e/src",
+  "sourceRoot": "apps/weather-app-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nx/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/account-remote-e2e/cypress.config.ts",
-        "devServerTarget": "account-remote:serve:development",
+        "cypressConfig": "apps/weather-app-e2e/cypress.config.ts",
+        "devServerTarget": "weather-app:serve:development",
         "testingType": "e2e"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "account-remote:serve:production"
+          "devServerTarget": "weather-app:serve:production"
         },
         "ci": {
-          "devServerTarget": "account-remote:serve-static"
+          "devServerTarget": "weather-app:serve-static"
         }
       }
     },
@@ -24,10 +24,10 @@
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/account-remote-e2e/**/*.{js,ts}"]
+        "lintFilePatterns": ["apps/weather-app-e2e/**/*.{js,ts}"]
       }
     }
   },
   "tags": [],
-  "implicitDependencies": ["account-remote"]
+  "implicitDependencies": ["weather-app"]
 }

@@ -1,6 +1,6 @@
 import { getGreeting } from '../support/app.po';
 
-describe('account-remote', () => {
+describe('weather-app', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -8,6 +8,6 @@ describe('account-remote', () => {
     cy.login('my-email@something.com', 'myPassword');
 
     // Function helper example, see `../support/app.po.ts` file
-    getGreeting().contains('Welcome account-remote');
+    getGreeting().contains('Welcome weather-app');
   });
 });
