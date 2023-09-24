@@ -9,6 +9,7 @@ import { appRoutes } from './app.routes';
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, { initialNavigation: 'enabledBlocking' }),
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
