@@ -1,9 +1,9 @@
 import { Route } from '@angular/router';
-import {NxWelcomeComponent} from "./nx-welcome.component";
+import {AppWeatherComponent} from "./AppWeather/app-weather.component";
 
 export const workenvWeatherAppRoutes: Route[] = [
   {
     path:'',
-    component:NxWelcomeComponent
+    component:AppWeatherComponent
   }
 ];
