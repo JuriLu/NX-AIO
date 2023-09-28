@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx run shell:serve:development"
+    "start": "nx run shell:serve:development",
+    "nx-weather": "nx run weather-app:serve:development",
+    "nx-account": "nx run account-remote:serve:development"
   },
   "private": true,
   "dependencies": {

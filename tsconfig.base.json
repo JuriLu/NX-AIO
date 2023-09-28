@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@NxAIO/Workenv-WeatherApp": ["libs/workenv-weather-app/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
