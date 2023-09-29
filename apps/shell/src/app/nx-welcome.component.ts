@@ -14,24 +14,27 @@ import { Component, ViewEncapsulation } from '@angular/core';
       html {
         -webkit-text-size-adjust: 100%;
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-          'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-          'Noto Color Emoji';
+        'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji';
         line-height: 1.5;
         tab-size: 4;
         scroll-behavior: smooth;
       }
+
       body {
         font-family: inherit;
         line-height: inherit;
         margin: 0;
       }
+
       h1,
       h2,
       p,
       pre {
         margin: 0;
       }
+
       *,
       ::before,
       ::after {
@@ -40,46 +43,60 @@ import { Component, ViewEncapsulation } from '@angular/core';
         border-style: solid;
         border-color: currentColor;
       }
+
       h1,
       h2 {
         font-size: inherit;
         font-weight: inherit;
       }
+
       a {
         color: inherit;
         text-decoration: inherit;
       }
+
       pre {
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-          'Liberation Mono', 'Courier New', monospace;
+        'Liberation Mono', 'Courier New', monospace;
       }
+
       svg {
         display: block;
         vertical-align: middle;
       }
+
+      .image {
+        border-radius: 1rem;
+      }
+
       svg {
         shape-rendering: auto;
         text-rendering: optimizeLegibility;
       }
+
       pre {
         background-color: rgba(55, 65, 81, 1);
         border-radius: 0.25rem;
         color: rgba(229, 231, 235, 1);
         font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-          'Liberation Mono', 'Courier New', monospace;
+        'Liberation Mono', 'Courier New', monospace;
         overflow: scroll;
         padding: 0.5rem 0.75rem;
       }
+
       .shadow {
         box-shadow: 0 0 #0000, 0 0 #0000, 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
       }
+
       .rounded {
         border-radius: 1.5rem;
       }
+
       .wrapper {
         width: 100%;
       }
+
       .container {
         margin-left: auto;
         margin-right: auto;
@@ -90,15 +107,18 @@ import { Component, ViewEncapsulation } from '@angular/core';
         color: rgba(55, 65, 81, 1);
         width: 100%;
       }
+
       #welcome {
         margin-top: 2.5rem;
       }
+
       #welcome h1 {
         font-size: 3rem;
         font-weight: 500;
         letter-spacing: -0.025em;
         line-height: 1;
       }
+
       #welcome span {
         display: block;
         font-size: 1.875rem;
@@ -106,6 +126,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
         line-height: 2.25rem;
         margin-bottom: 0.5rem;
       }
+
       #hero {
         align-items: center;
         background-color: hsla(214, 62%, 21%, 1);
@@ -116,15 +137,18 @@ import { Component, ViewEncapsulation } from '@angular/core';
         grid-template-columns: 1fr;
         margin-top: 3.5rem;
       }
+
       #hero .text-container {
         color: rgba(255, 255, 255, 1);
         padding: 3rem 2rem;
       }
+
       #hero .text-container h2 {
         font-size: 1.5rem;
         line-height: 2rem;
         position: relative;
       }
+
       #hero .text-container h2 svg {
         color: hsla(162, 47%, 50%, 1);
         height: 2rem;
@@ -133,9 +157,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
         top: 0;
         width: 2rem;
       }
+
       #hero .text-container h2 span {
         margin-left: 2.5rem;
       }
+
       #hero .text-container a {
         background-color: rgba(255, 255, 255, 1);
         border-radius: 0.75rem;
@@ -145,16 +171,19 @@ import { Component, ViewEncapsulation } from '@angular/core';
         padding: 1rem 2rem;
         text-decoration: inherit;
       }
+
       #hero .logo-container {
         display: none;
-        justify-content: center;
+        justify-content: end;
         padding-left: 2rem;
-        padding-right: 2rem;
+        padding-right: 20px;
       }
+
       #hero .logo-container svg {
         color: rgba(255, 255, 255, 1);
         width: 66.666667%;
       }
+
       #middle-content {
         align-items: flex-start;
         display: grid;
@@ -162,9 +191,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
         grid-template-columns: 1fr;
         margin-top: 3.5rem;
       }
+
       #learning-materials {
         padding: 2.5rem 2rem;
       }
+
       #learning-materials h2 {
         font-weight: 500;
         font-size: 1.25rem;
@@ -173,6 +204,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
         padding-left: 1rem;
         padding-right: 1rem;
       }
+
       .list-item-link {
         align-items: center;
         border-radius: 0.75rem;
@@ -180,31 +212,34 @@ import { Component, ViewEncapsulation } from '@angular/core';
         margin-top: 1rem;
         padding: 1rem;
         transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
-          -webkit-backdrop-filter;
+        opacity, box-shadow, transform, filter, backdrop-filter,
+        -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
         width: 100%;
       }
+
       .list-item-link svg:first-child {
         margin-right: 1rem;
         height: 1.5rem;
         transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
-          -webkit-backdrop-filter;
+        opacity, box-shadow, transform, filter, backdrop-filter,
+        -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
         width: 1.5rem;
       }
+
       .list-item-link > span {
         flex-grow: 1;
         font-weight: 400;
         transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
-          -webkit-backdrop-filter;
+        opacity, box-shadow, transform, filter, backdrop-filter,
+        -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
       }
+
       .list-item-link > span > span {
         color: rgba(107, 114, 128, 1);
         display: block;
@@ -213,11 +248,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
         font-weight: 300;
         line-height: 1rem;
         transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
-          -webkit-backdrop-filter;
+        opacity, box-shadow, transform, filter, backdrop-filter,
+        -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
       }
+
       .list-item-link svg:last-child {
         height: 1rem;
         transition-property: all;
@@ -225,40 +261,48 @@ import { Component, ViewEncapsulation } from '@angular/core';
         transition-duration: 150ms;
         width: 1rem;
       }
+
       .list-item-link:hover {
         color: rgba(255, 255, 255, 1);
         background-color: hsla(162, 47%, 50%, 1);
       }
+
       .list-item-link:hover > span {
       }
+
       .list-item-link:hover > span > span {
         color: rgba(243, 244, 246, 1);
       }
+
       .list-item-link:hover svg:last-child {
         transform: translateX(0.25rem);
       }
+
       #other-links {
       }
+
       .button-pill {
         padding: 1.5rem 2rem;
         margin-bottom: 2rem;
         transition-duration: 300ms;
         transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
-          -webkit-backdrop-filter;
+        opacity, box-shadow, transform, filter, backdrop-filter,
+        -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         align-items: center;
         display: flex;
       }
+
       .button-pill svg {
         transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
-          -webkit-backdrop-filter;
+        opacity, box-shadow, transform, filter, backdrop-filter,
+        -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
         flex-shrink: 0;
         width: 3rem;
       }
+
       .button-pill > span {
         letter-spacing: -0.025em;
         font-weight: 400;
@@ -267,42 +311,52 @@ import { Component, ViewEncapsulation } from '@angular/core';
         padding-left: 1rem;
         padding-right: 1rem;
       }
+
       .button-pill span span {
         display: block;
         font-size: 0.875rem;
         font-weight: 300;
         line-height: 1.25rem;
       }
+
       .button-pill:hover svg,
       .button-pill:hover {
         color: rgba(255, 255, 255, 1) !important;
       }
+
       .nx-console:hover {
         background-color: rgba(0, 122, 204, 1);
       }
+
       .nx-console svg {
         color: rgba(0, 122, 204, 1);
       }
+
       #nx-repo:hover {
         background-color: rgba(24, 23, 23, 1);
       }
+
       #nx-repo svg {
         color: rgba(24, 23, 23, 1);
       }
+
       #nx-cloud {
         margin-bottom: 2rem;
         margin-top: 2rem;
         padding: 2.5rem 2rem;
       }
+
       #nx-cloud > div {
         align-items: center;
         display: flex;
       }
+
       #nx-cloud > div svg {
         border-radius: 0.375rem;
         flex-shrink: 0;
         width: 3rem;
       }
+
       #nx-cloud > div h2 {
         font-size: 1.125rem;
         font-weight: 400;
@@ -311,20 +365,24 @@ import { Component, ViewEncapsulation } from '@angular/core';
         padding-left: 1rem;
         padding-right: 1rem;
       }
+
       #nx-cloud > div h2 span {
         display: block;
         font-size: 0.875rem;
         font-weight: 300;
         line-height: 1.25rem;
       }
+
       #nx-cloud p {
         font-size: 1rem;
         line-height: 1.5rem;
         margin-top: 1rem;
       }
+
       #nx-cloud pre {
         margin-top: 1rem;
       }
+
       #nx-cloud a {
         color: rgba(107, 114, 128, 1);
         display: block;
@@ -333,13 +391,16 @@ import { Component, ViewEncapsulation } from '@angular/core';
         margin-top: 1.5rem;
         text-align: right;
       }
+
       #nx-cloud a:hover {
         text-decoration: underline;
       }
+
       #commands {
         padding: 2.5rem 2rem;
         margin-top: 3.5rem;
       }
+
       #commands h2 {
         font-size: 1.25rem;
         font-weight: 400;
@@ -348,6 +409,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
         padding-left: 1rem;
         padding-right: 1rem;
       }
+
       #commands p {
         font-size: 1rem;
         font-weight: 300;
@@ -356,6 +418,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
         padding-left: 1rem;
         padding-right: 1rem;
       }
+
       details {
         align-items: center;
         display: flex;
@@ -364,9 +427,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
         padding-right: 1rem;
         width: 100%;
       }
+
       details pre > span {
         color: rgba(181, 181, 181, 1);
       }
+
       summary {
         border-radius: 0.5rem;
         display: flex;
@@ -374,19 +439,22 @@ import { Component, ViewEncapsulation } from '@angular/core';
         padding: 0.5rem;
         cursor: pointer;
         transition-property: background-color, border-color, color, fill, stroke,
-          opacity, box-shadow, transform, filter, backdrop-filter,
-          -webkit-backdrop-filter;
+        opacity, box-shadow, transform, filter, backdrop-filter,
+        -webkit-backdrop-filter;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-duration: 150ms;
       }
+
       summary:hover {
         background-color: rgba(243, 244, 246, 1);
       }
+
       summary svg {
         height: 1.5rem;
         margin-right: 1rem;
         width: 1.5rem;
       }
+
       #love {
         color: rgba(107, 114, 128, 1);
         font-size: 0.875rem;
@@ -395,6 +463,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
         opacity: 0.6;
         text-align: center;
       }
+
       #love svg {
         color: rgba(252, 165, 165, 1);
         width: 1.25rem;
@@ -402,13 +471,16 @@ import { Component, ViewEncapsulation } from '@angular/core';
         display: inline;
         margin-top: -0.25rem;
       }
+
       @media screen and (min-width: 768px) {
         #hero {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
+
         #hero .logo-container {
           display: flex;
         }
+
         #middle-content {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
@@ -445,16 +517,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
             <a href="#commands"> What&apos;s next? </a>
           </div>
           <div class="logo-container">
-            <svg
-              fill="currentColor"
-              role="img"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.987 14.138l-3.132 4.923-5.193-8.427-.012 8.822H0V4.544h3.691l5.247 8.833.005-3.998 3.044 4.759zm.601-5.761c.024-.048 0-3.784.008-3.833h-3.65c.002.059-.005 3.776-.003 3.833h3.645zm5.634 4.134a2.061 2.061 0 0 0-1.969 1.336 1.963 1.963 0 0 1 2.343-.739c.396.161.917.422 1.33.283a2.1 2.1 0 0 0-1.704-.88zm3.39 1.061c-.375-.13-.8-.277-1.109-.681-.06-.08-.116-.17-.176-.265a2.143 2.143 0 0 0-.533-.642c-.294-.216-.68-.322-1.18-.322a2.482 2.482 0 0 0-2.294 1.536 2.325 2.325 0 0 1 4.002.388.75.75 0 0 0 .836.334c.493-.105.46.36 1.203.518v-.133c-.003-.446-.246-.55-.75-.733zm2.024 1.266a.723.723 0 0 0 .347-.638c-.01-2.957-2.41-5.487-5.37-5.487a5.364 5.364 0 0 0-4.487 2.418c-.01-.026-1.522-2.39-1.538-2.418H8.943l3.463 5.423-3.379 5.32h3.54l1.54-2.366 1.568 2.366h3.541l-3.21-5.052a.7.7 0 0 1-.084-.32 2.69 2.69 0 0 1 2.69-2.691h.001c1.488 0 1.736.89 2.057 1.308.634.826 1.9.464 1.9 1.541a.707.707 0 0 0 1.066.596zm.35.133c-.173.372-.56.338-.755.639-.176.271.114.412.114.412s.337.156.538-.311c.104-.231.14-.488.103-.74z"
-              />
-            </svg>
+            <img class="image" src="../assets/Logo%202.png" width="203" height="203" alt="" srcset="">
           </div>
         </div>
         <!--  MIDDLE CONTENT  -->
@@ -619,7 +682,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path d="M12 14l9-5-9-5-9 5 9 5z"/>
                 <path
                   d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
                 />
@@ -650,53 +713,20 @@ import { Component, ViewEncapsulation } from '@angular/core';
             </a>
           </div>
           <div id="other-links">
-            <a
+<!--            QUICK MENU CARDS-->
+            <div
               class="button-pill rounded shadow nx-console"
-              href="https://marketplace.visualstudio.com/items?itemName=nrwl.angular-console&utm_source=nx-project"
-              target="_blank"
+              routerLink="/weather-app"
               rel="noreferrer"
             >
-              <svg
-                fill="currentColor"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Visual Studio Code</title>
-                <path
-                  d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"
-                />
-              </svg>
+             <img ngSrc="../assets/WeatherApp/WeatherAppIcons/2.png" alt="" width="70" height="70">
               <span>
-                Install Nx Console for VSCode
-                <span>The official VSCode plugin for Nx.</span>
+                Weather App
+                <span>Quick link for Weather Application.</span>
               </span>
-            </a>
-            <a
-              class="button-pill rounded shadow nx-console"
-              href="https://plugins.jetbrains.com/plugin/21060-nx-console"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <svg
-                fill="currentColor"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>IntelliJ</title>
-                <path
-                  d="M0 0v24h24V0zm3.723 3.111h5v1.834h-1.39v6.277h1.39v1.834h-5v-1.834h1.444V4.945H3.723zm11.055 0H17v6.5c0 .612-.055 1.111-.222 1.556-.167.444-.39.777-.723 1.11-.277.279-.666.557-1.11.668a3.933 3.933 0 0 1-1.445.278c-.778 0-1.444-.167-1.944-.445a4.81 4.81 0 0 1-1.279-1.056l1.39-1.555c.277.334.555.555.833.722.277.167.611.278.945.278.389 0 .721-.111 1-.389.221-.278.333-.667.333-1.278zM2.222 19.5h9V21h-9z"
-                ></path>
-              </svg>
-              <span>
-                Install Nx Console for JetBrains
-                <span
-                  >Available for WebStorm, Intellij IDEA Ultimate and
-                  more!</span
-                >
-              </span>
-            </a>
+            </div>
+
+
             <div id="nx-cloud" class="rounded shadow">
               <div>
                 <svg
@@ -758,6 +788,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
             </a>
           </div>
         </div>
+
         <!--  COMMANDS  -->
         <div id="commands" class="rounded shadow">
           <h2>Next steps</h2>
