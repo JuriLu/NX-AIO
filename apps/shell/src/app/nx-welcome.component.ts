@@ -491,8 +491,8 @@ import { Component, ViewEncapsulation } from '@angular/core';
         <!--  WELCOME  -->
         <div id="welcome">
           <h1>
-            <span> Hello there, </span>
-            Welcome host 👋
+            <span> Home Menu </span>
+            User {{host}} 👋
           </h1>
         </div>
         <!--  HERO  -->
@@ -714,7 +714,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
           </div>
           <div id="other-links">
 <!--            QUICK MENU CARDS-->
-            <div
+            <a
               class="button-pill rounded shadow nx-console"
               routerLink="/weather-app"
               rel="noreferrer"
@@ -724,7 +724,29 @@ import { Component, ViewEncapsulation } from '@angular/core';
                 Weather App
                 <span>Quick link for Weather Application.</span>
               </span>
-            </div>
+            </a>
+            <a
+              class="button-pill rounded shadow nx-console"
+              routerLink="/weather-app"
+              rel="noreferrer"
+            >
+              <img ngSrc="../assets/WeatherApp/WeatherAppIcons/2.png" alt="" width="70" height="70">
+              <span>
+                Weather App
+                <span>Quick link for Weather Application.</span>
+              </span>
+            </a>
+            <a
+              class="button-pill rounded shadow nx-console"
+              routerLink="/weather-app"
+              rel="noreferrer"
+            >
+              <img ngSrc="../assets/WeatherApp/WeatherAppIcons/2.png" alt="" width="70" height="70">
+              <span>
+                Weather App
+                <span>Quick link for Weather Application.</span>
+              </span>
+            </a>
 
 
             <div id="nx-cloud" class="rounded shadow">
@@ -881,4 +903,9 @@ nx affected:e2e</pre>
   styles: [],
   encapsulation: ViewEncapsulation.None,
 })
-export class NxWelcomeComponent {}
+export class NxWelcomeComponent {
+  host= ''
+  constructor() {
+    this.host = 'Jurgen'
+  }
+}
