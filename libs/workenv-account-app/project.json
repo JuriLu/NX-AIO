@@ -1,7 +1,7 @@
 {
-  "name": "shared-weather-app",
+  "name": "workenv-account-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "libs/shared-weather-app/src",
+  "sourceRoot": "libs/workenv-account-app/src",
   "prefix": "nx-aio",
   "tags": [],
   "projectType": "library",
@@ -10,7 +10,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "libs/shared-weather-app/jest.config.ts",
+        "jestConfig": "libs/workenv-account-app/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -25,8 +25,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "libs/shared-weather-app/**/*.ts",
-          "libs/shared-weather-app/**/*.html"
+          "libs/workenv-account-app/**/*.ts",
+          "libs/workenv-account-app/**/*.html"
         ]
       }
     }
