@@ -727,13 +727,13 @@ import { Component, ViewEncapsulation } from '@angular/core';
             </a>
             <a
               class="button-pill rounded shadow nx-console"
-              routerLink="/weather-app"
+              routerLink="/account-remote"
               rel="noreferrer"
             >
-              <img ngSrc="../assets/WeatherApp/WeatherAppIcons/2.png" alt="" width="70" height="70">
+              <img ngSrc="../assets/TravelAgencyApp/TravelAppIcon.png" alt="" width="70" height="70">
               <span>
-                Weather App
-                <span>Quick link for Weather Application.</span>
+                Travel App
+                <span>Quick link for Travel Application.</span>
               </span>
             </a>
             <a

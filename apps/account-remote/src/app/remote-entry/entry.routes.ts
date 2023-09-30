@@ -1,6 +1,8 @@
 import { Route } from '@angular/router';
-import { RemoteEntryComponent } from './entry.component';
 
 export const remoteRoutes: Route[] = [
-  { path: '', component: RemoteEntryComponent },
+  {
+    path: '',
+    loadChildren:()=> import('@nx-aio/workenv-account-app').then((m)=>m.WorkenvAccountAppModule)
+  },
 ];
