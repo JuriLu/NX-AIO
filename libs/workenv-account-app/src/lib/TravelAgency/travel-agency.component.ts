@@ -42,8 +42,19 @@ export class TravelAgencyComponent {
       vehicle: this.Vehicles[0],
       passenger: this.Passengers[0],
       travelDistance:200
-    }
-    ,
+    },
+    {
+      driver:this.Drivers[0],
+      vehicle: this.Vehicles[0],
+      passenger: this.Passengers[0],
+      travelDistance:200
+    },
+    {
+      driver:this.Drivers[0],
+      vehicle: this.Vehicles[0],
+      passenger: this.Passengers[0],
+      travelDistance:200
+    },
     {
       driver: {
         name:'Brady',
@@ -56,7 +67,8 @@ export class TravelAgencyComponent {
       },
       passenger: {
         firstName:'Jurgen',
-        lastName:'Lubonja',age:24
+        lastName:'Lubonja',
+        age:24
       },
       travelDistance:100
     },
