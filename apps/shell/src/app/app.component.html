@@ -1,0 +1,91 @@
+<nav class="navbar navbar-bg navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand p-0"
+       [routerLink]="'/'">
+      <img class="Border-Radius-1" src="../assets/Logo%202.png" width="100" height="100">
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!--        CONF-MFE-MENU-->
+
+        <li class="nav-item">
+          <a
+            class="nav-link active flex "
+            aria-current="page"
+            routerLink="weather-app"
+          >
+            <div class="row p-0 m-0">
+              <div class="col-md-12 text-center">
+                <img class="Border-Radius-1" src="../assets/WeatherApp/WeatherAppIcons/1.png"
+                     [width]="imgWidth" [height]="imgHeight">
+              </div>
+            </div>
+            <div class="row">
+              <span class="text-white">WeatherApp</span>
+            </div>
+          </a
+          >
+        </li>
+        <li class="nav-item mx-2">
+          <a
+            class="nav-link active flex "
+            aria-current="page"
+            routerLink="account-remote"
+          >
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <img class="Border-Radius-1" src="../assets/TravelAgencyApp/TravelAppIconWhite.png"
+                     [width]="imgWidth" [height]="imgHeight">
+              </div>
+            </div>
+            <div class="row">
+              <span class="text-white">Travel Agency</span>
+            </div>
+          </a
+          >
+        </li>
+        <li class="nav-item mx-2">
+          <a
+            class="nav-link active flex "
+            aria-current="page"
+            routerLink="weather-app"
+          >
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <img class="Border-Radius-1" src="../assets/WeatherApp/WeatherAppIcons/1.png"
+                     [width]="imgWidth" [height]="imgHeight">
+              </div>
+            </div>
+            <div class="row">
+              <span class="text-white">App3</span>
+            </div>
+          </a
+          >
+        </li>
+      </ul>
+        <!--        CONF-MFE-MENU-->
+      <!--      <form class="d-flex" role="search">-->
+      <!--        <input-->
+      <!--          class="form-control me-2"-->
+      <!--          type="search"-->
+      <!--          placeholder="Search"-->
+      <!--          aria-label="Search"-->
+      <!--        />-->
+      <!--        <button class="btn btn-outline-success" type="submit">Search</button>-->
+      <!--      </form>-->
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

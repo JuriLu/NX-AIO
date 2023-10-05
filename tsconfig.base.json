@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@NxAIO/Workenv-WeatherApp": ["libs/workenv-weather-app/src/index.ts"],
+      "@nx-aio/shared-weather-app": ["libs/shared-weather-app/src/index.ts"],
+      "@nx-aio/workenv-account-app": ["libs/workenv-account-app/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

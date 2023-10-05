@@ -1,8 +1,12 @@
 {
   "name": "@nx-aio/source",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start-shell": "nx serve shell",
+    "start:nx-weather": "nx serve weather-app",
+    "start:nx-account": "nx serve account-remote"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~16.2.0",
@@ -12,8 +16,10 @@
     "@angular/forms": "~16.2.0",
     "@angular/platform-browser": "~16.2.0",
     "@angular/platform-browser-dynamic": "~16.2.0",
+    "@angular/platform-server": "~16.2.0",
     "@angular/router": "~16.2.0",
     "@nx/angular": "16.9.0",
+    "bootstrap":  "^5.3.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
@@ -34,6 +40,7 @@
     "@nx/js": "16.9.0",
     "@nx/linter": "16.9.0",
     "@nx/web": "16.9.0",
+    "@nx/webpack": "16.9.0",
     "@nx/workspace": "16.9.0",
     "@schematics/angular": "~16.2.0",
     "@types/jest": "^29.4.0",
