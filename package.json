@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "shell": "nx serve shell",
-    "nx-weather": "nx serve weather-app",
-    "nx-account": "nx serve account-remote"
+    "start-shell": "nx serve shell",
+    "start:nx-weather": "nx serve weather-app",
+    "start:nx-account": "nx serve account-remote"
   },
   "private": true,
   "dependencies": {
