@@ -1,17 +1,20 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {PreloadAllModules, RouterModule} from '@angular/router';
 import {appRoutes} from "./app.routes";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes,{ initialNavigation: 'enabledBlocking' }
+    RouterModule.forRoot(appRoutes, {
+        initialNavigation: 'enabledBlocking',
+        preloadingStrategy: PreloadAllModules
+      }
     ),
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [],
 })
-export class AppModule {}
+export class AppModule {
+}

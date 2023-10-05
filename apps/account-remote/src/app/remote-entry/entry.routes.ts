@@ -3,6 +3,6 @@ import { Route } from '@angular/router';
 export const remoteRoutes: Route[] = [
   {
     path: '',
-    loadChildren:()=> import('@nx-aio/workenv-account-app').then((m)=>m.WorkenvAccountAppModule)
+    loadChildren:()=> import('@NxAIO/Workenv-AccountApp').then((m)=>m.WorkenvAccountAppModule)
   },
 ];

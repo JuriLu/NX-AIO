@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {DriverModel, PassengerModel, TravelDto, VehicleModel} from "@nx-aio/shared-weather-app";
+import {DriverModel, PassengerModel, TravelDto, VehicleModel} from "@NxAIO/Shared-Lib";
 
 @Component({
   selector: 'nx-aio-travel-agency',

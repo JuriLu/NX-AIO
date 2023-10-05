@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {WeatherModel, WeatherService} from "@nx-aio/shared-weather-app";
+import {WeatherModel, WeatherService} from "@NxAIO/Shared-Lib";
 
 @Component({
   selector: 'nx-aio-app-weather',

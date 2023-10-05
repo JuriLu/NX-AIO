@@ -11,6 +11,6 @@ import {HttpClientModule} from "@angular/common/http";
   providers:[WeatherService],
   exports:[]
 })
-export class SharedWeatherAppModule {
+export class SharedLibModule {
 
 }

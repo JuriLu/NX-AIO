@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'shared-weather-app',
+  displayName: 'Shared-Lib',
   preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/libs/shared-weather-app',
+  coverageDirectory: '../../coverage/libs/Shared-Lib',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

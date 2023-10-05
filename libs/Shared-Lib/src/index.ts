@@ -1,4 +1,4 @@
-export * from './lib/shared-weather-app.module';
+export * from './lib/shared-lib.module';
 
 export * from './lib/environments/environment'
 
