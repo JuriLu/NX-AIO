@@ -1,16 +1,13 @@
 <div class="body mat-typography">
-  <section class="wrapper">
-    <div class="container">
+    <div class="container-md container-lg">
       <div class="row">
         <div class="col text-center mb-5 mt-3">
-          <h1 class="header">Travel Agency</h1>
-          <p class="lead">Travel information </p>
+          <p class="h2 fw-bold text-white">Travel Agency</p>
+          <p class="h6 fw-bold text-gray-700">Travel information </p>
         </div>
       </div>
       <div class="row">
-
-
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="col-md-4 mb-4">
           <div class="card text-white card-has-bg click-col"
                style="background-image:url('https://source.unsplash.com/600x900/?tech,street');">
             <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street"
@@ -26,7 +23,7 @@
         </div>
 
 
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="col-md-4 mb-4">
           <div class="card text-white card-has-bg click-col"
                style="background-image:url('https://source.unsplash.com/600x900/?tree,nature');">
             <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature"
@@ -51,7 +48,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="col-md-4 mb-4">
           <div class="card text-white card-has-bg click-col"
                style="background-image:url('https://source.unsplash.com/600x900/?computer,design');">
             <img class="card-img d-none" src="https://source.unsplash.com/600x900/?computer,design"
@@ -75,8 +72,8 @@
           </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-4 mb-4 ">
-          <div class="card text-white card-has-bg click-col customJJ"
+        <div class="col-md-12 mb-4 ">
+          <div class="card text-white card-has-bg click-col"
                style="background-image:url('https://source.unsplash.com/600x900/?tree,nature');">
             <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature"
                  alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
@@ -84,8 +81,8 @@
 <!--            TRAVEL CARD-->
             <div class="overflow-y-scroll card-img-overlay d-flex flex-column">
               <h1 class="card-meta mb-4 p-2 fw-bold">Travel Details</h1>
-              <div class="row border-1 p-3" *ngFor="let travel of Travels">
-                  <div class="col-md-3">
+              <div class="row p-3" *ngFor="let travel of Travels">
+                  <div class="col-md-4">
                     <h2 class="card-meta mb-2">Driver Details</h2>
                     <h4 class="card-title mt-0 ">
                       <span style="padding-left: 5px">{{travel.driver.name}}</span>
@@ -99,7 +96,7 @@
                     </small>
                   </div>
 
-                  <div class="col-md-3">
+                  <div class="col-md-4">
                     <h2 class="card-meta">Passenger Details</h2>
                     <h4 class="card-title mt-0 ">
                       <span style="padding-left: 5px">{{travel.passenger.firstName}}</span>
@@ -113,7 +110,7 @@
                     </small>
                   </div>
 
-                  <div class="col-md-3">
+                  <div class="col-md-4">
                     <h2 class="card-meta">Vehicle Details</h2>
                     <h4 class="card-title mt-0 "><a class="text-white" herf="#"></a>
                       <span class="fw-bold mx-1">{{travel.vehicle.model}}</span>
@@ -132,5 +129,4 @@
         </div>
       </div>
     </div>
-  </section>
 </div>
