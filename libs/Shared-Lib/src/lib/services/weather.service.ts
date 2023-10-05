@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders, HttpParams} from "@angular/common/http";
 
 import {Observable} from "rxjs";
-import {environment, WeatherModel} from "@nx-aio/shared-weather-app";
+import {environment, WeatherModel} from "@NxAIO/Shared-Lib";
 
 
 @Injectable()

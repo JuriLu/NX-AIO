@@ -1,4 +1,4 @@
-import {DriverModel, PassengerModel, VehicleModel} from "@nx-aio/shared-weather-app";
+import {DriverModel, PassengerModel, VehicleModel} from "@NxAIO/Shared-Lib";
 
 
 export class TravelDto {
