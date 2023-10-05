@@ -143,7 +143,40 @@
   text-align: center;
 }
 
+.search form {
+  background-color: rgba(225,225,225,0.1);
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 1em;
+  color: #EDEDED;
+  font-size: 0.8em;
+  text-align: center;
+}
+
 .search input {
+  background-color: rgba(225,225,225,0.1);
+  //outline: none;
+  //border: none;
+  border-radius: 20px;
+  padding: 1em;
+  color: #EDEDED;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.search button {
+  background-color: rgba(225,225,225,0.1);
+  //outline: #6e6e6e;
+  //border: #212121;
+  border-radius: 20px;
+  padding: 1em;
+  color: #EDEDED;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+input[type=text]:focus {
   background-color: rgba(225,225,225,0.1);
   outline: none;
   border: none;

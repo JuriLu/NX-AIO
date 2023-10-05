@@ -1,13 +1,14 @@
 <div class="body grid">
   <div class="search">
-    <form #form="ngForm" (submit)="onSubmit()">
+    <form #form="ngForm" (submit)="onSubmit()" autocomplete="off">
       <input type="text" placeholder="Search city" name="city" [(ngModel)]="cityName">
+      <button class="mx-2"><i class="bi bi-arrow-return-left text-white p-2"></i></button>
     </form>
   </div>
   <div class="containerCU" *ngIf="weatherData">
     <div class="upper-data">
       <img src="../assets/WeatherApp/summer.png" *ngIf="weatherData.current.temp_c > 15">
-      <img src="'../assets/WeatherApp/winter.png'" *ngIf="weatherData.current.temp_c <= 15">
+      <img src="../assets/WeatherApp/winter.png" *ngIf="weatherData.current.temp_c <= 20">
 
       <div class="weather-data">
         <div class="location">{{ weatherData.location.name }}</div>
