@@ -14,22 +14,29 @@ export class TravelAgencyComponent {
 
   Vehicles: VehicleModel[] = [
     {model:'Mercedes',year:2022},
-    {model:'Audi',year:2020},
-    {model:'Volkswagen',year:2015},
-    {model:'Bmw',year:2016},
+    {model:'Audi',year:2024},
+    {model:'Volkswagen',year:2022},
+    {model:'Bmw',year:2021},
+    {model:'Tesla',year:2023},
+    {model:'Hyndai',year:2019},
 
   ]
 
   Drivers: DriverModel[] = [
-    {name:'John',licenseType:'D',licenseExpDate:'20-05-2030'},
+    {name:'Lando',licenseType:'D',licenseExpDate:'20-05-2030'},
     {name:'Jost',licenseType:'C',licenseExpDate:'16-09-2035'},
     {name:'Max',licenseType:'C',licenseExpDate:'28-02-2035'},
+    {name:'Lewis',licenseType:'C',licenseExpDate:'28-02-2035'},
+    {name:'Charles',licenseType:'C',licenseExpDate:'28-02-2035'},
   ]
 
   Passengers: PassengerModel[] = [
     {firstName:'Jonelle',lastName:'Ewart',age:24},
     {firstName:'Deborah',lastName:'Terry',age:26},
-    {firstName:'Kimberley',lastName:'Hancock',age:23},
+    {firstName:'Kimberley',lastName:'Hancock',age:35},
+    {firstName:'Denis',lastName:'Carlson',age:44},
+    {firstName:'Charlie',lastName:`O'Conor`,age:57},
+    {firstName:'Sarah',lastName:'Cimmich',age:15},
   ]
 
 
