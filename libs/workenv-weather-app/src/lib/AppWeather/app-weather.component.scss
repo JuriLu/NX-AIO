@@ -15,12 +15,13 @@
   box-sizing: border-box;
 }
 
+
 .body{
   font-family: Verdana,Geneva,Tahoma,sans-serif;
   font-size: 16px;
   width: 100%;
   height: 100vh;
-  background-color: #3C429E ;
+  background: linear-gradient(#EDEDED,#3C429E) ;
 
   display: grid;
   justify-content: center;
@@ -144,12 +145,12 @@
 }
 
 .search form {
-  background-color: rgba(225,225,225,0.1);
+  background-color: black;
   outline: none;
   border: none;
   border-radius: 20px;
   padding: 1em;
-  color: #EDEDED;
+  color: rgba(225,225,225,0.1);
   font-size: 0.8em;
   text-align: center;
 }
@@ -171,7 +172,7 @@
   //border: #212121;
   border-radius: 20px;
   padding: 1em;
-  color: #EDEDED;
+  color: rgba(225,225,225,0.1);
   font-size: 0.8em;
   text-align: center;
 }
@@ -182,7 +183,20 @@ input[type=text]:focus {
   border: none;
   border-radius: 20px;
   padding: 1em;
-  color: #EDEDED;
+  color:white;
   font-size: 0.8em;
   text-align: center;
+}
+
+input[type=text] {
+  //background-color: rgba(225,225,225,0.1);
+  //outline: none;
+  //border: none;
+  //border-radius: 20px;
+  //padding: 1em;
+  //color:white;
+  //font-size: 30px;
+  font-size: larger;
+  font-family: Bahnschrift;
+  //text-align: center;
 }
