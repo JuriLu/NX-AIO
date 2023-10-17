@@ -17,7 +17,7 @@
     "paths": {
       "@NxAIO/Workenv-WeatherApp": ["libs/workenv-weather-app/src/index.ts"],
       "@NxAIO/Shared-Lib": ["libs/Shared-Lib/src/index.ts"],
-      "@NxAIO/Workenv-AccountApp": ["libs/workenv-account-app/src/index.ts"]
+      "@NxAIO/Workenv-TravelApp": ["libs/workenv-travel-app/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

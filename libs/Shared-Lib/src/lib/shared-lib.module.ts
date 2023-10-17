@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {WeatherService} from "./services/weather.service";
 import {HttpClientModule} from "@angular/common/http";
+import {WeatherService} from "./services/WeatherAppServices/weather.service";
 
 @NgModule({
   imports: [
