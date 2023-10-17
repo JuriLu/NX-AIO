@@ -9,7 +9,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
+* {
   font-family: inherit;
   line-height: inherit;
   margin: 0;
@@ -20,6 +20,6 @@ body {
 }
 
 .navbar-bg{
-  background-color: #116b80 !important;
+  background:linear-gradient(#6e6f7f,#ffffff) !important;
 }
 

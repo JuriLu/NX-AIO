@@ -1,0 +1,212 @@
+<div class="body mat-typography">
+  <div class="container-md container-lg">
+    <div class="row">
+      <div class="col text-center mb-5 mt-3">
+        <p class="h2 fw-bold text-black">Travel Agency</p>
+        <p class="h6 fw-bold text-gray-700">Travel information </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <!--VEHICLES CARD-->
+      <div class="col-md-4 mb-4">
+        <div class="card text-white card-has-bg click-col"
+             style="background-image:url('https://source.unsplash.com/600x900/?tech,street');">
+          <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tech,street"
+               alt="IMG">
+          <div class="overflow-y-scroll card-img-overlay d-flex flex-column">
+            <h2 class="card-meta mb-2">Vehicles</h2>
+            <div class="card-body" *ngFor="let vehicle of Vehicles">
+              <h3 class="card-title mt-0">
+                <i class="bi bi-car-front"></i> {{vehicle.model}}
+              </h3>
+              <small class="fw-bold ms-3">{{vehicle.year}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--DRIVERS CARD-->
+      <div class="col-md-4 mb-4">
+        <div class="card text-white card-has-bg click-col"
+             style="background-image:url('https://source.unsplash.com/600x900/?tree,nature');">
+          <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature"
+               alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+          <div class="overflow-y-scroll  card-img-overlay d-flex flex-column">
+            <h2 class="card-meta mb-2">Drivers</h2>
+            <div class="card-body" *ngFor="let driver of Drivers">
+              <h4 class="card-title mt-0">
+
+                <!--DYNAMIC DATA-->
+                <div class="row">
+                  <div class="col-md-4">
+                    <span class="fw-bold"><a class="text-white"><i class="bi bi-person-standing"></i></a> {{driver.name}}</span>
+                  </div>
+                  <div class="col-md-4">
+                    <span class="fw-bold">{{driver.licenseType}}</span>
+                  </div>
+                  <div class="col-md-4">
+                    <span class="fw-bold">{{driver.licenseExpDate}}</span>
+                  </div>
+                </div>
+              </h4>
+
+              <!--STATIC DATA-->
+              <small>
+                <div class="row">
+                  <div class="col-md-4">
+                    <span class="ms-3">Name</span>
+                  </div>
+                  <div class="col-md-4">
+                    <span>License</span>
+                  </div>
+                  <div class="col-md-4">
+                    <span>Exp. Date</span>
+                  </div>
+                </div>
+              </small>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PASSENGERS CARD-->
+      <div class="col-md-4 mb-4">
+        <div class="card text-white card-has-bg click-col"
+             style="background-image:url('https://source.unsplash.com/600x900/?computer,design');">
+          <img class="card-img d-none" src="https://source.unsplash.com/600x900/?computer,design"
+               alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+          <div class="overflow-y-scroll card-img-overlay d-flex flex-column">
+            <h2 class="card-meta mb-2">Passengers</h2>
+            <div class="card-body" *ngFor="let passenger of Passengers">
+              <h4 class="card-title mt-0">
+
+                <!--ROW FOR DYNAMIC DESCRIPTION-->
+                <div class="row">
+                  <div class="col-md-4">
+                    <!--ICON--> <a class="text-white"><i class="bi bi-file-earmark-person"></i></a>
+                    <span class="fw-bold "> {{passenger.firstName}}</span>
+                  </div>
+                  <div class="col-md-4">
+                    <span class="fw-bold">{{passenger.lastName}}</span>
+                  </div>
+                  <div class="col-md-4">
+                    <span class="fw-bold">{{passenger.age}}</span>
+                  </div>
+                </div>
+              </h4>
+
+              <!--ROW FOR STATIC DESCRIPTION-->
+              <small>
+                <div class="row">
+                  <div class="col-md-4">
+                    <span class="ms-3">First Name</span>
+                  </div>
+                  <div class="col-md-4">
+                    <span>Last Name</span>
+                  </div>
+                  <div class="col-md-4">
+                    <span>Age</span>
+                  </div>
+                </div>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--TRAVEL CARD-->
+      <div class="col-md-12 mb-4">
+        <div class="card text-white card-has-bg click-col"
+             style="background-image:url('https://source.unsplash.com/600x900/?tree,nature');">
+          <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature"
+               alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+          <div class="overflow-y-scroll card-img-overlay d-flex flex-column">
+            <h1 class="card-meta mb-4 p-2 fw-bold">Travel Details</h1>
+            <div class="row p-3" *ngFor="let travel of Travels">
+              <div class="col-md-4">
+                <h2 class="card-meta mb-2">Driver Details</h2>
+                <h4 class="card-title mt-0">
+
+                  <!--DRIVER Details row DYNAMIC-->
+                  <div class="row">
+                    <div class="col-md-3">
+                      <span class="fw-bold mx-1">{{travel.driver.name}}</span>
+                    </div>
+                    <div class="col-md-2">
+                      <span class="fw-bold mx-4">{{travel.driver.licenseType | uppercase}}</span>
+                    </div>
+                    <div class="col-md-6">
+                      <span class="fw-bold mx-5">{{travel.driver.licenseExpDate}}</span>
+                    </div>
+                  </div>
+                </h4>
+                <!--DRIVER Details row STATIC-->
+                <small>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <span class="fw-bold mx-1">Name</span>
+                    </div>
+                    <div class="col-md-4 ms-3">
+                      <span class="fw-bold mx-4">License </span>
+                    </div>
+                    <div class="col-md-5">
+                      <span class="fw-bold mx-3">Exp. Date</span>
+                    </div>
+                  </div>
+                </small>
+              </div>
+
+              <!--PASSENGERS Details row DYNAMIC-->
+              <div class="col-md-4">
+                <h2 class="card-meta">Passenger Details</h2>
+                <h4 class="card-title mt-0">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <span class="fw-bold mx-1">{{travel.passenger.firstName}}</span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="fw-bold mx-4">{{travel.passenger.lastName}}</span>
+                    </div>
+                    <div class="col-md-3">
+                      <span class="fw-bold mx-4">{{travel.passenger.age}}</span>
+                    </div>
+                  </div>
+                </h4>
+                <!--PASSENGERS Details row STATIC-->
+                <small>
+                  <div class="row">
+                    <div class="col-md-3">
+                      <span class="mx-1">First Name</span>
+                    </div>
+                    <div class="col-md-4">
+                      <span class="mx-3">Last Name </span>
+                    </div>
+                    <div class="col-md-3">
+                      <span class="ms-4">Age</span>
+                    </div>
+                  </div>
+                </small>
+              </div>
+
+              <div class="col-md-4">
+                <h2 class="card-meta">Vehicle Details</h2>
+                <h4 class="card-title mt-0 "><a class="text-white" herf="#"></a>
+                  <span class="fw-bold mx-1">{{travel.vehicle.model}}</span>
+                  <span class="fw-bold mx-4">{{travel.vehicle.year}}</span>
+                </h4>
+                <small><i class="far fa-clock"></i>
+                  <span class="mx-1">Model</span>
+                  <span class="mx-5 px-3">Year</span>
+                </small>
+              </div>
+              <hr>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
