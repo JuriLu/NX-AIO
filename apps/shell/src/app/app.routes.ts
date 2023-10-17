@@ -12,9 +12,9 @@ export const appRoutes: Route[] = [
       import('weather-app/Module').then((m) => m.RemoteEntryModule),
   },
   {
-    path: 'account-remote',
+    path: 'travel-app',
     loadChildren: () =>
-      import('account-remote/Module').then((m) => m.RemoteEntryModule),
+      import('travel-app/Module').then((m) => m.RemoteEntryModule),
   },
 
 ];

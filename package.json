@@ -5,7 +5,7 @@
   "scripts": {
     "start-shell": "nx serve shell",
     "start:nx-weather": "nx serve weather-app",
-    "start:nx-account": "nx serve account-remote"
+    "start:nx-travel": "nx serve travel-app"
   },
   "private": true,
   "dependencies": {

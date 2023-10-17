@@ -63,7 +63,7 @@
       },
       "configurations": {
         "production": {
-          "browserTarget": "weather-app:build:production"
+          "browserTarget": "c:build:production"
         },
         "development": {
           "browserTarget": "weather-app:build:development"

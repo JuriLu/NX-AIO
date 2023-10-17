@@ -1,28 +1,28 @@
 {
-  "name": "account-remote",
+  "name": "travel-app",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
   "prefix": "nx-aio",
-  "sourceRoot": "apps/account-remote/src",
+  "sourceRoot": "/src",
   "tags": [],
   "targets": {
     "build": {
       "executor": "@nx/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/account-remote",
-        "index": "apps/account-remote/src/index.html",
-        "main": "apps/account-remote/src/main.ts",
+        "outputPath": "dist/apps/travel-app",
+        "index": "apps/travel-app/src/index.html",
+        "main": "apps/travel-app/src/main.ts",
         "polyfills": ["zone.js"],
-        "tsConfig": "apps/account-remote/tsconfig.app.json",
+        "tsConfig": "apps/travel-app/tsconfig.app.json",
         "assets": [
-          "apps/account-remote/src/favicon.ico",
-          "apps/account-remote/src/assets"
+          "src/favicon.ico",
+          "src/assets"
         ],
-        "styles": ["apps/account-remote/src/styles.scss"],
+        "styles": ["apps/travel-app/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
-          "path": "apps/account-remote/webpack.config.js"
+          "path": "apps/travel-app/webpack.config.js"
         }
       },
       "configurations": {
@@ -41,7 +41,7 @@
           ],
           "outputHashing": "all",
           "customWebpackConfig": {
-            "path": "apps/account-remote/webpack.prod.config.js"
+            "path": "apps/travel-app/webpack.prod.config.js"
           }
         },
         "development": {
@@ -63,10 +63,10 @@
       },
       "configurations": {
         "production": {
-          "browserTarget": "account-remote:build:production"
+          "browserTarget": "travel-app:build:production"
         },
         "development": {
-          "browserTarget": "account-remote:build:development"
+          "browserTarget": "travel-app:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "account-remote:build"
+        "browserTarget": "travel-app:build"
       }
     },
     "lint": {
@@ -82,8 +82,8 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "apps/account-remote/**/*.ts",
-          "apps/account-remote/**/*.html"
+          "apps/travel-app/**/*.ts",
+          "apps/travel-app/**/*.html"
         ]
       }
     },
@@ -91,7 +91,7 @@
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/account-remote/jest.config.ts",
+        "jestConfig": "apps/travel-app/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
@@ -105,16 +105,16 @@
       "executor": "@nx/web:file-server",
       "defaultConfiguration": "production",
       "options": {
-        "buildTarget": "account-remote:build",
+        "buildTarget": "travel-app:build",
         "port": 4201,
         "watch": false
       },
       "configurations": {
         "development": {
-          "buildTarget": "account-remote:build:development"
+          "buildTarget": "travel-app:build:development"
         },
         "production": {
-          "buildTarget": "account-remote:build:production"
+          "buildTarget": "travel-app:build:production"
         }
       }
     }
