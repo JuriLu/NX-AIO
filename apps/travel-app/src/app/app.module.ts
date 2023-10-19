@@ -4,7 +4,6 @@ import {PreloadAllModules, RouterModule} from '@angular/router';
 import {appRoutes} from "./app.routes";
 
 @NgModule({
-  declarations: [],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes, {
@@ -13,6 +12,5 @@ import {appRoutes} from "./app.routes";
     }),
   ],
   providers: [],
-  bootstrap: [],
 })
 export class AppModule {}
