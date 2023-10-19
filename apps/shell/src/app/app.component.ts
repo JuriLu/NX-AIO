@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'host';
-  imgWidth = 60
-  imgHeight = 60
+  imgWidth = 85
+  imgHeight = 85
 }

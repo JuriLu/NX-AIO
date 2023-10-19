@@ -8,8 +8,8 @@ import {Component, ViewEncapsulation} from '@angular/core';
 })
 export class NxWelcomeComponent {
   host = ''
-  imgWidth = 70
-  imgHeight = 70
+  imgWidth = 100
+  imgHeight = 100
 
   constructor() {
     this.host = 'Jurgen'
