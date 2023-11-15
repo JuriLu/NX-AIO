@@ -15,6 +15,7 @@ export class AppWeatherComponent implements OnInit{
 
   ngOnInit(): void {
     this.getWeatherData(this.cityName);
+
   }
 
   onSubmit() {
