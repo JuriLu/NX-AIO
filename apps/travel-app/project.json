@@ -15,10 +15,7 @@
         "main": "apps/travel-app/src/main.ts",
         "polyfills": ["zone.js"],
         "tsConfig": "apps/travel-app/tsconfig.app.json",
-        "assets": [
-          "src/favicon.ico",
-          "src/assets"
-        ],
+        "assets": ["src/favicon.ico", "src/assets"],
         "styles": ["apps/travel-app/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
@@ -56,17 +53,17 @@
       "defaultConfiguration": "production"
     },
     "serve": {
-      "executor": "@nx/angular:webpack-dev-server",
+      "executor": "@nx/angular:dev-server",
       "options": {
         "port": 4201,
         "publicHost": "http://localhost:4201"
       },
       "configurations": {
         "production": {
-          "browserTarget": "travel-app:build:production"
+          "buildTarget": "travel-app:build:production"
         },
         "development": {
-          "browserTarget": "travel-app:build:development"
+          "buildTarget": "travel-app:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -74,31 +71,18 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "browserTarget": "travel-app:build"
+        "buildTarget": "travel-app:build"
       }
     },
     "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "apps/travel-app/**/*.ts",
-          "apps/travel-app/**/*.html"
-        ]
-      }
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
     },
     "test": {
       "executor": "@nx/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "apps/travel-app/jest.config.ts",
-        "passWithNoTests": true
-      },
-      "configurations": {
-        "ci": {
-          "ci": true,
-          "codeCoverage": true
-        }
+        "jestConfig": "apps/travel-app/jest.config.ts"
       }
     },
     "serve-static": {
