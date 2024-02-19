@@ -9,16 +9,16 @@ export const appRoutes: Route[] = [
   {
     path: 'weather-app',
     loadChildren: () =>
-      import('weather-app/Module').then((m) => m.RemoteEntryModule),
+      import('@NxAIO/Workenv-WeatherApp').then((m) => m.WorkenvWeatherAppModule),
   },
   {
     path: 'travel-app',
     loadChildren: () =>
-      import('travel-app/Module').then((m) => m.RemoteEntryModule),
+      import('@NxAIO/Workenv-TravelApp').then((m) => m.WorkenvTravelAppModule),
   },
   {
     path: 'pdf-app',
     loadChildren: () =>
-      import('pdf-app/Module').then((m) => m.RemoteEntryModule),
+      import('@NxAIO/Workenv-PdfApp').then((m) => m.WorkenvPdfAppModule),
   }
 ];
